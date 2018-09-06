@@ -152,6 +152,13 @@ bot.on("message", async message =>{
         process.exit()
         return;
     }
+    if(command ===`${prefix}help`){
+         message.author.send("f!froppy: Sends a picture of froppy\n"
+                             +"f!bubba: Sends a big bold oof in chat\n"
+                             +"f!disable: Disables Froppy bot incase of an emergency\n"
+                            );
+        return;
+    }
 
 
 });
