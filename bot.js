@@ -28,7 +28,7 @@ bot.on("message", async message =>{
     if(!command.startsWith(prefix)) return;
 
     if(command ===`${prefix}bubba`){
-        message.chennel.send("**OOF**");
+        message.channel.send("**OOF**");
         return;
     }
    
