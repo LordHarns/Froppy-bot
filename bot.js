@@ -163,6 +163,7 @@ bot.on("message", async message =>{
     if(command ===`${prefix}killcage`){
         c++;
          message.author.send("Killed Cagebot and transfered him into new body.");
+        var user = e.Channel.FindUsers(e.GetArg("@cages")).FirstOrDefault();
         await user.Edit(nickname: "Cägeböt PX-"+c).ConfigureAwait(false);
         return;
         
