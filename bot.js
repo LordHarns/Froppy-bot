@@ -3,6 +3,7 @@ const bot = new Discord.Client({
     disableEveryone: true
 });
 const prefix= 'f!';
+int c= 9;
 
 //bot.on("ready", ()=> {
   //  console.log('I am ready!');
@@ -158,6 +159,13 @@ bot.on("message", async message =>{
                              +"f!disable: Disables Froppy bot incase of an emergency\n"
                             );
         return;
+    }
+    if(command ===`${prefix}killcage`){
+        c++;
+         message.author.send("Killed Cagebot and transfered him into new body.");
+        await user.Edit(nickname: "Cägeböt PX-"+c).ConfigureAwait(false);
+        return;
+        
     }
 
 
