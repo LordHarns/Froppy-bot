@@ -3,7 +3,7 @@ const bot = new Discord.Client({
     disableEveryone: true
 });
 const prefix= 'f!';
-int c= 9;
+
 
 //bot.on("ready", ()=> {
   //  console.log('I am ready!');
@@ -160,14 +160,7 @@ bot.on("message", async message =>{
                             );
         return;
     }
-    if(command ===`${prefix}killcage`){
-        c++;
-         message.author.send("Killed Cagebot and transfered him into new body.");
-        var user = e.Channel.FindUsers(e.GetArg("@cages")).FirstOrDefault();
-        await user.Edit(nickname: "Cägeböt PX-"+c).ConfigureAwait(false);
-        return;
-        
-    }
+    
 
 
 });
