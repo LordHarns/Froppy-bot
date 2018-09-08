@@ -17,7 +17,7 @@ bot.on('guildMemberAdd', member => {
   channel.send("Hello and welcome to the Grandline Review, your source for everything One Piece, except for here, where we talk shit and share memes.\n"+
 
         "We would encourage you to check <#452165353041035266> and to choose and join a crew of your preference. Once you've chosen a crew, DM or ping (if they're online) any Yonko to join that crew, and they'll give you your role and privileges at their earliest convenience.\n"
-        +"Enjoy your stay! <:Froppy:451291349145354241>"`);
+        +"Enjoy your stay! <:Froppy:451291349145354241>");
 });
 bot.on("message", async message =>{
     
