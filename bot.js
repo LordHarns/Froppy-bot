@@ -8,7 +8,17 @@ const prefix= 'f!';
 //bot.on("ready", ()=> {
   //  console.log('I am ready!');
 //});
+bot.on('guildMemberAdd', member => {
+  // Send the message to a designated channel on a server:
+  const channel = member.guild.channels.find(ch => ch.name === 'member-log');
+  // Do nothing if the channel wasn't found on this server
+  if (!channel) return;
+  // Send the message, mentioning the member
+  channel.send("Hello and welcome to the Grandline Review, your source for everything One Piece, except for here, where we talk shit and share memes.\n"+
 
+        "We would encourage you to check <#452165353041035266> and to choose and join a crew of your preference. Once you've chosen a crew, DM or ping (if they're online) any Yonko to join that crew, and they'll give you your role and privileges at their earliest convenience.\n"
+        +"Enjoy your stay! <:Froppy:451291349145354241>"`);
+});
 bot.on("message", async message =>{
     
     
@@ -16,14 +26,7 @@ bot.on("message", async message =>{
     let messageArray = message.content.split(" ");
     let command = messageArray[0];
     let args = messageArray.slice(1);
-    if(command ===`[Welcome!]`){
-        if(!message.author.bot) return;
-        message.chennel.send("Hello and welcome to the Grandline Review, your source for everything One Piece, except for here, where we talk shit and share memes.\n"+
-
-        "We would encourage you to check <#452165353041035266> and to choose and join a crew of your preference. Once you've chosen a crew, DM or ping (if they're online) any Yonko to join that crew, and they'll give you your role and privileges at their earliest convenience.\n"
-        +"Enjoy your stay! <:Froppy:451291349145354241>");
-        return;
-    }
+    
 
     if(message.author.bot) return;
     if(!command.startsWith(prefix)) return;
