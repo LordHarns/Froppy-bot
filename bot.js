@@ -219,6 +219,7 @@ bot.on("message", async message =>{
         var image=imagelist["pillow"];
         var randomImageLink =image[Math.floor(Math.random()*image.length)];
         message.channel.send(randomImageLink);
+        return;
     }
     
 
