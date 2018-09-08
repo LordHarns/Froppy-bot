@@ -163,6 +163,63 @@ bot.on("message", async message =>{
                             );
         return;
     }
+    if(command===`${prefix}pillow`){
+                const imagelist = {
+            "pillow": [
+                "https://i.imgur.com/bVJ3AcH.gif",
+                "https://i.imgur.com/j64lEFF.gif",
+                "https://i.imgur.com/LbNTbtr.gif",
+                "https://i.imgur.com/MCCLrhu.gif",
+                "https://i.imgur.com/KAodnQe.gif",
+                "https://i.imgur.com/IuVG7Hz.gif",
+                "https://i.imgur.com/5EhugGk.gif",
+                "https://i.imgur.com/aNGTr8V.gif",
+                "https://i.imgur.com/djY1ecN.gif",
+                "https://i.imgur.com/sZwdC1Q.gif",
+                "https://i.imgur.com/aswyWIq.gif",
+                "https://i.imgur.com/7tENNaJ.gif",
+                "https://i.imgur.com/4AkRU3H.gif",
+                "https://i.imgur.com/ZqM7YHB.gif",
+                "https://i.imgur.com/mepMkQ3.gif",
+                "https://i.imgur.com/AnAycTj.gif",
+                "https://i.imgur.com/k6eCF4M.gif",
+                "https://i.imgur.com/6zkqhel.gif",
+                "https://i.imgur.com/bg5RqRg.gif",
+                "https://i.imgur.com/bMQcDtE.gif",
+                "https://i.imgur.com/ndJ8jcM.gif",
+                "https://i.imgur.com/MMPquvC.gif",
+                "https://i.imgur.com/cleqoVO.gif",
+                "https://i.imgur.com/cnD8CcI.gif",
+                "https://i.imgur.com/8cNBnNq.gif",
+                "https://i.imgur.com/4cW2pQ2.gif",
+                "https://i.imgur.com/ZqM7YHB.gif",
+                "https://i.imgur.com/4AkRU3H.gif",
+                "https://i.imgur.com/dTOFaC2.gif",
+                "https://i.imgur.com/cwHH5V7.gif",
+                "https://i.imgur.com/STbALgM.gif",
+                "https://i.imgur.com/BJoZ04W.gif",
+                "https://i.imgur.com/dj6CjGO.gif",
+                "https://i.imgur.com/NSfgZsw.gif",
+                "https://i.imgur.com/gb7ma4u.gif",
+                "https://i.imgur.com/GRrwEp8.gif",
+                "https://i.imgur.com/vm7bshe.gif",
+                "https://i.imgur.com/xBLrwKs.gif",
+                "https://i.imgur.com/gD8Pp6c.gif",
+                "https://i.imgur.com/30vhm5Z.gif",
+                "https://i.imgur.com/iXsFSjU.gif",
+                "https://i.imgur.com/gQWBRsf.gif",
+                "https://i.imgur.com/MCCLrhu.gif",
+                "https://i.imgur.com/iX7Qe10.gif",
+                "https://i.imgur.com/Tc2uD1Y.gif",
+                "https://i.imgur.com/j76TZwx.gif",
+                "https://i.imgur.com/PTNg7Y6.gif",
+                "https://i.imgur.com/EzhbFbd.gif"
+            ]
+        };
+        var image=imagelist["pillow"];
+        var randomImageLink =image[Math.floor(Math.random()*image.length)];
+        message.channel.send(randomImageLink);
+    }
     
 
 
