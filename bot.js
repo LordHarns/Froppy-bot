@@ -29,6 +29,11 @@ bot.on("message", async message =>{
     
 
     if(message.author.bot) return;
+    if(command ===`im`||command ===`Im`){
+       
+        message.channel.send("Hi "+args+", My name is Froppy.");
+        return;
+    }
     if(!command.startsWith(prefix)) return;
 
     if(command ===`${prefix}bubba`){
