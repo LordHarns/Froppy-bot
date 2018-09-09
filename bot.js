@@ -29,7 +29,7 @@ bot.on("message", async message =>{
     
 
     if(message.author.bot) return;
-    if(command ===`im`||command ===`Im`){
+    if(command ===`im`||command ===`Im`||command ===`I'm`||command ===`i'm`){
        
         message.channel.send("Hi "+args+", My name is Froppy.");
         return;
