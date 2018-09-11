@@ -251,6 +251,25 @@ bot.on("message", async message =>{
         message.channel.send(randomImageLink);
          return;
      }
+     if(command ===`${prefix}carue`){
+  
+    
+     const imagelist = {
+            "pillow": [
+                "https://imgur.com/a/VNVLJOh",
+                "https://imgur.com/a/BTZt83k",
+                "https://imgur.com/a/KQ3u65b",
+                "https://imgur.com/a/G5ZcMpy",
+                "https://imgur.com/a/HKR3JFh"
+                
+                
+            ]
+        };
+        var image=imagelist["pillow"];
+        var randomImageLink =image[Math.floor(Math.random()*image.length)];
+        message.channel.send(randomImageLink);
+         return;
+     }
     
 
 
