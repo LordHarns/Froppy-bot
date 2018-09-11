@@ -226,6 +226,31 @@ bot.on("message", async message =>{
         message.channel.send(randomImageLink);
         return;
     }
+     if(command ===`${prefix}coffee`){
+  
+    
+     const imagelist = {
+            "pillow": [
+                "https://imgur.com/a/Fnw89Ks",
+                "https://imgur.com/a/TsDVPlC",
+                "https://imgur.com/a/tyP9Mom",
+                "https://imgur.com/obwm9J1",
+                "https://imgur.com/ymOUKfO",
+                "https://imgur.com/4UCCOn2",
+                "https://imgur.com/PNw4tsz",
+                "https://imgur.com/FQTkGhe",
+                "https://imgur.com/48JzcWT",
+                "https://imgur.com/IhwBDi3",
+                "https://imgur.com/Z06aRAa"
+                
+                
+            ]
+        };
+        var image=imagelist["pillow"];
+        var randomImageLink =image[Math.floor(Math.random()*image.length)];
+        message.channel.send(randomImageLink);
+         return;
+     }
     
 
 
