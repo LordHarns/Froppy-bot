@@ -271,6 +271,11 @@ bot.on("message", async message =>{
          return;
      }
     
+    if(command ===`${prefix}simp`){
+        message.channel.send("https://imgur.com/a/zMhmqSp");
+        return;
+    }
+    
 
 
 });
