@@ -171,6 +171,7 @@ bot.on("message", async message =>{
                              +"f!simp: shows simp and his boulder\n"
                              +"f!mustache: I have no idea why this exists\n"
                              +"f!leam: posts a picture of LEAM\n"
+                             +"f!skulljoke: posts a picture that you can see with your eyes, but I don't have any eyes! yohohoho\n"
                              
                             );
         return;
@@ -288,6 +289,11 @@ bot.on("message", async message =>{
     }
     if(command ===`${prefix}leam`){
         message.reply("https://imgur.com/a/DG18rZm");
+        return;
+    }
+    
+     if(command ===`${prefix}skulljoke`){
+        message.reply("https://imgur.com/a/GWxBRRD");
         return;
     }
     
