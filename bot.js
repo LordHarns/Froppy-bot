@@ -165,6 +165,13 @@ bot.on("message", async message =>{
          message.author.send("f!froppy: Sends a picture of froppy\n"
                              +"f!bubba: Sends a big bold oof in chat\n"
                              +"f!disable: Disables Froppy bot incase of an emergency\n"
+                             +"f!pillow: Posts a pillow gif\n"
+                             +"f!coffee: posts a coffee gif\n"
+                             +"f!carue: posts a picture of how Carue will look in the future\n"
+                             +"f!simp: shows simp and his boulder\n"
+                             +"f!mustache: I have no idea why this exists\n"
+                             +"f!leam: posts a picture of LEAM\n"
+                             
                             );
         return;
     }
