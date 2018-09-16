@@ -172,6 +172,7 @@ bot.on("message", async message =>{
                              +"f!mustache: I have no idea why this exists\n"
                              +"f!leam: posts a picture of LEAM\n"
                              +"f!skulljoke: posts a picture that you can see with your eyes, but I don't have any eyes! yohohoho\n"
+                             +"f!lewd: a command to use if there is lewd stuff going on....\n"
                              
                             );
         return;
@@ -294,6 +295,11 @@ bot.on("message", async message =>{
     
      if(command ===`${prefix}skulljoke`){
         message.reply("https://imgur.com/a/GWxBRRD");
+        return;
+    }
+    
+    if(command ===`${prefix}lewd`){
+        message.channel.send("https://i.imgur.com/qknrvCO.gif");
         return;
     }
     
