@@ -275,6 +275,10 @@ bot.on("message", async message =>{
         message.channel.send("https://imgur.com/a/zMhmqSp");
         return;
     }
+    if(command ===`${prefix}mustache`){
+        message.reply("I am the queen of Mustaches! All those without one must parish! <:stache:490669227775229962>");
+        return;
+    }
     
 
 
