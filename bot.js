@@ -276,7 +276,11 @@ bot.on("message", async message =>{
         return;
     }
     if(command ===`${prefix}mustache`){
-        message.reply("I am the queen of Mustaches! All those without one must parish! <:stache:490669227775229962>");
+        message.reply("<:stache:490669227775229962>");
+        return;
+    }
+    if(command ===`${prefix}leam`){
+        message.reply("https://imgur.com/a/DG18rZm");
         return;
     }
     
