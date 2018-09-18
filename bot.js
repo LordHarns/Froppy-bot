@@ -307,14 +307,17 @@ bot.on("message", async message =>{
         return;
     }
     if(command ===`${prefix}dad`){
-        message.channel.send("<@446739080198488074>, your child needs you.");
+        message.channel.send("<@446739080198488074>. Your child needs you.");
         return;
     }
     if(command ===`${prefix}flashy`||command ===`${prefix}ashy`){
         message.channel.send("https://imgur.com/a/5xqZFzw");
         return;
     }
-    
+    if(command ===`${prefix}mom`){
+        message.channel.send("<@272110457068847106>. Your child needs you.");
+        return;
+    }
 
 
 });
