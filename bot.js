@@ -306,6 +306,10 @@ bot.on("message", async message =>{
         message.channel.send('Once upon a time in a land far, far away, there was a boy named Ruby. He was known as "ruby the failure" as everything he did failed. This is his story. Ruby has always faught power, he was a rebel from the day he joined the server. This failed, as he joined a crew two weeks later. He then tried again, this also failed within days of its creation. Ruby tried one last time to start a revolution, however, this time he was smart about it. He began by demanding something of our lord, his demand was so absurd, that no man would ever imagine doing it. Ruby called it "disrespecting the democratic process" when our lord refused, and the revolution had began. People from all over the land joined his cause, all in the name of democracy. However, people soon learned of his trickery, and abandoned Ruby, calling him "Ruby the Failure" and "Ruby the Lier". This final failed revolution, will forever be known as "the Zeam Rebellion." And Ruby will forever be known as the Failure.  ');
         return;
     }
+    if(command ===`${prefix}dad`){
+        message.channel.send("<@446739080198488074>, your child needs you.");
+        return;
+    }
     
 
 
