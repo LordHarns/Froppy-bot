@@ -285,16 +285,16 @@ bot.on("message", async message =>{
         return;
     }
     if(command ===`${prefix}mustache`){
-        message.reply("<:stache:490669227775229962>");
+        message.channel.send("<:stache:490669227775229962>");
         return;
     }
     if(command ===`${prefix}leam`){
-        message.reply("https://imgur.com/a/DG18rZm");
+        message.channel.send("https://imgur.com/a/DG18rZm");
         return;
     }
     
      if(command ===`${prefix}skulljoke`){
-        message.reply("https://imgur.com/a/GWxBRRD");
+        message.channel.send("https://imgur.com/a/GWxBRRD");
         return;
     }
     
@@ -308,6 +308,10 @@ bot.on("message", async message =>{
     }
     if(command ===`${prefix}dad`){
         message.channel.send("<@446739080198488074>, your child needs you.");
+        return;
+    }
+    if(command ===`${prefix}flashy`||command ===`${prefix}ashy`){
+        message.channel.send("https://imgur.com/a/5xqZFzw");
         return;
     }
     
