@@ -318,6 +318,10 @@ bot.on("message", async message =>{
         message.channel.send("<@272110457068847106>. Your child needs you.");
         return;
     }
+     if(command ===`${prefix}emperor`){
+        message.channel.send("Come back, we miss you.<:sanjisad:484922406880935943>");
+        return;
+    }
 
 
 });
