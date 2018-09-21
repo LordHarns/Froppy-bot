@@ -326,14 +326,7 @@ bot.on("message", async message =>{
         if(message.member.hasPermission('KICK_MEMBERS'))
         {
         message.delete();
-            try 
-            {
-                const fetched = await message.channel.fetchMessages({limit: args.toString()});
-            }
-            catch (e)
-            {
-               message.channel.send("Error: Improper syntax");
-            }
+        const fetched = await message.channel.fetchMessages({limit: args.toString()});  
         message.channel.bulkDelete(fetched);
         message.channel.send("Deleted "+fetched.size+" messages");
         }else{
