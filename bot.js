@@ -328,12 +328,11 @@ bot.on("message", async message =>{
         message.delete();
             try 
             {
-                const fetched = await message.channel.fetchMessages({limit: args});
+                const fetched = await message.channel.fetchMessages({limit: args.toString()});
             }
             catch (e)
             {
                message.channel.send("Error: Improper syntax");
-                return;
             }
         message.channel.bulkDelete(fetched);
         message.channel.send("Deleted "+fetched.size+" messages");
