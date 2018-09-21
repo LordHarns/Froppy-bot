@@ -322,6 +322,29 @@ bot.on("message", async message =>{
         message.channel.send("Come back, we miss you.<:sanjisad:484922406880935943>");
         return;
     }
+     if(command ===`${prefix}delete`){
+        if(message.member.hasPermission('KICK_MEMBERS'))
+        {
+        message.delete();
+            try 
+            {
+                const fetched = await message.channel.fetchMessages({limit: args});
+            }
+            catch (e)
+            {
+               message.channel.send("Error: Improper syntax");
+                return;
+            }
+        message.channel.bulkDelete(fetched);
+        message.channel.send("Deleted "+fetched.size+" messages");
+        }else{
+            message.channel.send("Error: Improper Permissions");
+            return;
+        }
+        return;
+    }
+    
+  
 
 
 });
