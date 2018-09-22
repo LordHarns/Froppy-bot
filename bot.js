@@ -335,6 +335,10 @@ bot.on("message", async message =>{
         }
         return;
     }
+    if(command ===`${prefix}super`){
+        message.channel.send("https://imgur.com/a/S3rrcZP");
+        return;
+    }
     
   
 
