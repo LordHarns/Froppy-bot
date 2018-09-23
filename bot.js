@@ -281,7 +281,7 @@ bot.on("message", async message =>{
      }
     
     if(command ===`${prefix}simp`){
-        message.channel.send("https://imgur.com/a/zMhmqSp");
+        message.channel.send("https://imgur.com/a/ifj2jgu");
         return;
     }
     if(command ===`${prefix}mustache`){
