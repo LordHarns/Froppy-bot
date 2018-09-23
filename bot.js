@@ -339,6 +339,10 @@ bot.on("message", async message =>{
         message.channel.send("https://imgur.com/a/S3rrcZP");
         return;
     }
+     if(command ===`${prefix}cage`){
+        message.channel.send("https://imgur.com/a/BA125vw");
+        return;
+    }
     
   
 
