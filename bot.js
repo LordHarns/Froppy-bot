@@ -343,7 +343,10 @@ bot.on("message", async message =>{
         message.channel.send("https://imgur.com/a/BA125vw");
         return;
     }
-    
+     if(command ===`${prefix}mineta`){
+        message.channel.send("A short, weak, and useless character whos only personality trait that stops him from being entirely forgotten is the fact that he is a pervert, and only exist to sell plushy toys does not deserve a command.");
+        return;
+    }
   
 
 
