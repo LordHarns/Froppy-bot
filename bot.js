@@ -316,7 +316,13 @@ bot.on("message", async message =>{
     }
     if(command ===`${prefix}mom`){
         message.channel.send("<@272110457068847106>. Your child needs you.");
-        message.channel.send("The remaining 419 pings will be messaged to at any point robin within the next 8 hours");
+        message.channel.send("The remaining 419 pings will be sent in <#450338581249130496> shortly.");
+        var i;
+        for (i = 0; i < 41; i++) { 
+        const channel = client.channels.find('id',"450338581249130496");
+        channel.send("<@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106><@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> ");
+        }
+         channel.send("<@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106><@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> ");
         return;
     }
      if(command ===`${prefix}emperor`){
