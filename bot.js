@@ -10,7 +10,7 @@ const prefix= 'f!';
 //});
 bot.on('guildMemberAdd', member => {
   // Send the message to a designated channel on a server:
-  var channel = member.guild.channels.find(ch => ch.name === 'member-log');
+  var channel = member.guild.channels.find(ch => ch.name === 'grand-line');
   // Do nothing if the channel wasn't found on this server
   if (!channel) return;
   // Send the message, mentioning the member
@@ -317,13 +317,13 @@ bot.on("message", async message =>{
     if(command ===`${prefix}mom`){
         message.channel.send("<@272110457068847106>. Your child needs you.");
         message.channel.send("The remaining 419 pings will be sent in <#450338581249130496> shortly.");      
-        var channel = client.channels.find('id', 450338581249130496);
+        var channel = client.channels.find(ch => ch.name === 'spam-bots-and-text');
         var i;
         for(i=0; i<41;i++){
         message.channel.send("<@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106><@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> ");
         }
         message.channel.send("<@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106><@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> ");
-        var channel = member.guild.channels.find(ch => ch.name === 'member-log');
+        var channel = member.guild.channels.find(ch => ch.name === 'grand-line');
         return;
     }
      if(command ===`${prefix}emperor`){
