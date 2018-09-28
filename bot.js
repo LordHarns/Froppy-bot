@@ -318,10 +318,9 @@ bot.on("message", async message =>{
         message.channel.send("<@272110457068847106>. Your child needs you.");
         message.channel.send("The remaining 419 pings will be sent in <#450338581249130496> shortly.");      
         var channel = client.channels.find(ch => ch.name === 'spam-bots-and-text');
-        var i;
-        for(i=0; i<41;i++){
+      
         channel.send("<@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106><@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> ");
-        }
+        
         channel.send("<@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106><@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> ");
         var channel = member.guild.channels.find(ch => ch.name === 'grand-line');
         return;
