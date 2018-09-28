@@ -316,12 +316,14 @@ bot.on("message", async message =>{
     }
     if(command ===`${prefix}mom`){
         message.channel.send("<@272110457068847106>. Your child needs you.");
-        message.channel.send("The remaining 419 pings will be sent in <#450338581249130496> shortly.");
-       
-        var channel = client.channels.find('id',"450338581249130496");
+        message.channel.send("The remaining 419 pings will be sent in <#450338581249130496> shortly.");      
+        var channel = client.channels.find('id', 450338581249130496);
+        var i;
+        for(i=0; i<41;i++){
         message.channel.send("<@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106><@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> ");
-         message.channel.send("<@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106><@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> ");
-         var channel = member.guild.channels.find(ch => ch.name === 'member-log');
+        }
+        message.channel.send("<@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106><@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> ");
+        var channel = member.guild.channels.find(ch => ch.name === 'member-log');
         return;
     }
      if(command ===`${prefix}emperor`){
