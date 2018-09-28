@@ -316,6 +316,7 @@ bot.on("message", async message =>{
     }
     if(command ===`${prefix}mom`){
         message.channel.send("<@272110457068847106>. Your child needs you.");
+        message.channel.send("The remaining 419 pings will be messaged to at any point robin within the next 8 hours");
         return;
     }
      if(command ===`${prefix}emperor`){
