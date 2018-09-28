@@ -318,7 +318,7 @@ bot.on("message", async message =>{
         message.channel.send("<@272110457068847106>. Your child needs you.");
         message.channel.send("The remaining 419 pings will be sent in <#450338581249130496> shortly.");
        
-        const channel = client.channels.find('id',"450338581249130496");
+        var channel = client.channels.find('id',"450338581249130496");
         message.channel.send("<@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106><@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> ");
          message.channel.send("<@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106><@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> ");
          var channel = member.guild.channels.find(ch => ch.name === 'member-log');
