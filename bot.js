@@ -10,7 +10,7 @@ const prefix= 'f!';
 //});
 bot.on('guildMemberAdd', member => {
   // Send the message to a designated channel on a server:
-  const channel = member.guild.channels.find(ch => ch.name === 'member-log');
+  var channel = member.guild.channels.find(ch => ch.name === 'member-log');
   // Do nothing if the channel wasn't found on this server
   if (!channel) return;
   // Send the message, mentioning the member
@@ -320,9 +320,10 @@ bot.on("message", async message =>{
         var i;
         for (i = 0; i < 41; i++) { 
         const channel = client.channels.find('id',"450338581249130496");
-        channel.send("<@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106><@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> ");
+        message.channel.send("<@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106><@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> ");
         }
-         channel.send("<@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106><@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> ");
+         message.channel.send("<@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106><@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> ");
+         var channel = member.guild.channels.find(ch => ch.name === 'member-log');
         return;
     }
      if(command ===`${prefix}emperor`){
