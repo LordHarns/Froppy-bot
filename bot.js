@@ -315,16 +315,8 @@ bot.on("message", async message =>{
         return;
     }
     if(command ===`${prefix}mom`){
-        message.channel.send("<@272110457068847106>. Your child needs you.");
-        message.channel.send("The remaining 419 pings will be sent in <#450338581249130496> shortly.");      
-        var channel = client.channels.find(ch => ch.name === 'spam-bots-and-text');
-         if (!channel) return;
-        channel.send("<@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> ");
-        
-        channel.send("<@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> <@272110457068847106> ");
-        var channel = member.guild.channels.find(ch => ch.name === 'grand-line');
-        if (!channel) return;
-        return;
+        //message.channel.send("<@272110457068847106>. Your child needs you.");
+        message.channel.send("https://imgur.com/a/SC8dbuB");
     }
      if(command ===`${prefix}emperor`){
         message.channel.send("Come back, we miss you.<:sanjisad:484922406880935943>");
