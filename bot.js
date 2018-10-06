@@ -285,7 +285,7 @@ bot.on("message", async message =>{
         return;
     }
     if(command ===`${prefix}mustache`){
-        message.channel.send("<:stache:490669227775229962>");
+        message.channel.send("<:stache:490669227775229962> :sabothumbsup:");
         return;
     }
     if(command ===`${prefix}leam`){
