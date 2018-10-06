@@ -351,6 +351,10 @@ bot.on("message", async message =>{
         message.channel.send("You can't kill what is already dead inside!");
         return;
     }
+     if(command ===`${prefix}steak`){
+        message.channel.send("Steak is still steak regardless of how thin it is cut.");
+        return;
+    }
   
 
 
