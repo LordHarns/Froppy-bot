@@ -285,7 +285,7 @@ bot.on("message", async message =>{
         return;
     }
     if(command ===`${prefix}mustache`){
-        message.channel.send("<:stache:490669227775229962> :sabothumbsup:");
+        message.channel.send("<:stache:490669227775229962>");
         return;
     }
     if(command ===`${prefix}leam`){
@@ -307,7 +307,7 @@ bot.on("message", async message =>{
         return;
     }
     if(command ===`${prefix}dad`){
-        message.channel.send("<<:aa:499071615892586496> <@446739080198488074>");
+        message.channel.send("<:aa:499071615892586496> <@446739080198488074>");
         return;
     }
     if(command ===`${prefix}flashy`||command ===`${prefix}ashy`){
