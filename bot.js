@@ -307,7 +307,7 @@ bot.on("message", async message =>{
         return;
     }
     if(command ===`${prefix}dad`){
-        message.channel.send("<:aa:499071615892586496> <@446739080198488074>");
+        message.channel.send("<@446739080198488074>. Your child needs you.");
         return;
     }
     if(command ===`${prefix}flashy`||command ===`${prefix}ashy`){
