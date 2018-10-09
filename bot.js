@@ -34,6 +34,8 @@ bot.on("message", async message =>{
  //       message.channel.send("Hi "+args+", My name is Froppy.");
  //       return;
  //   }
+   let memberRole = message.member.guild.roles.find('id', "499367329164034048");
+   message.member.addRole(memberRole).catch(console.error);
     if(!command.startsWith(prefix)) return;
 
     if(command ===`${prefix}bubba`){
