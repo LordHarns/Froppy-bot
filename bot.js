@@ -326,7 +326,7 @@ bot.on("message", async message =>{
      if(command ===`${prefix}delete`){
         if(message.member.hasPermission('KICK_MEMBERS'))
         {
-        message.delete();
+        message.delete(1000);
         const fetched = await message.channel.fetchMessages({limit: args.toString()});  
         message.channel.bulkDelete(fetched);
         message.channel.send("Deleted "+fetched.size+" messages");
@@ -358,10 +358,11 @@ bot.on("message", async message =>{
     } 
     if(command ===`${prefix}user`){
        let person = message.mentions.users.first() || message.guild.members.get(args[0]);
+        message.delete(1000);
         if(!person) return message.author.send("You did not specify a user.");
         message.author.send("Full Username: "+person.username+
-                           "\n ID: "+person.id+
-                           "\n Created at: "+person.createdAt);
+                           "\nID: "+person.id+
+                           "\nCreated at: "+person.createdAt);
        return;
     }
   
