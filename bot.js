@@ -355,6 +355,14 @@ bot.on("message", async message =>{
      if(command ===`${prefix}steak`){
         message.channel.send("Steak is still steak regardless of how thin it is cut.");
         return;
+    } 
+    if(command ===`${prefix}user`){
+       Let person = message.mentions.users.first() || message.guild.member(args[0]);
+        if(!person) return message.author.send("You did not specify a user.");
+        message.author.send("Full Username: "+person.username+
+                           "\n ID: "+person.id+
+                           "\n Created at: "+person.createdAt);
+       return;
     }
   
 
