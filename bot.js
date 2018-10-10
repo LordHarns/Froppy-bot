@@ -357,7 +357,7 @@ bot.on("message", async message =>{
         return;
     } 
     if(command ===`${prefix}user`){
-       Let person = message.mentions.users.first() || message.guild.member.get(args[0]);
+       Let person = message.mentions.users.first() || message.guild.members.get(args[0]);
         if(!person) return message.author.send("You did not specify a user.");
         message.author.send("Full Username: "+person.username+
                            "\n ID: "+person.id+
