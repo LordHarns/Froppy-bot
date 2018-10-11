@@ -371,7 +371,7 @@ bot.on("message", async message =>{
         return;
     } 
      if(command ===`${prefix}poof`){
-         if(!message.member.id==='210197125315821568')return;
+         if(message.member.id===!'210197125315821568')return;
        let person = message.mentions.users.first() || message.guild.members.get(args[0]);
         message.delete(1000);
         if(!person) return message.author.send("You did not specify a user.");
