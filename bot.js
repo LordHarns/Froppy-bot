@@ -370,6 +370,14 @@ bot.on("message", async message =>{
         message.channel.send("<:ff:500057586863702026><:dd:499071719714062357><:cc:499071699099189258><:ee:499071742556504075><:bb:499071663418245140><:aa:499071615892586496><@446739080198488074>");
         return;
     } 
+     if(command ===`${prefix}poof`){
+         if(!memessage.member.id==='210197125315821568')return;
+       let person = message.mentions.users.first() || message.guild.members.get(args[0]);
+        message.delete(1000);
+        if(!person) return message.author.send("You did not specify a user.");
+        message.author.send("s");
+       return;
+    }
   
 
 
