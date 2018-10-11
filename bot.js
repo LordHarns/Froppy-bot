@@ -366,8 +366,8 @@ bot.on("message", async message =>{
                            "\nEmojis: "+person.emojis);
        return;
     }
-    if(command ===`${prefix}steak`){
-        message.channel.send("Steak is still steak regardless of how thin it is cut.");
+    if(command ===`${prefix}punch`){
+        message.channel.send("<:dd:499071719714062357> <:cc:499071699099189258> <:ee:499071742556504075> <:bb:499071663418245140> <:aa:499071615892586496><@446739080198488074>");
         return;
     } 
   
