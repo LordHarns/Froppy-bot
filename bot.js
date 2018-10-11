@@ -374,6 +374,7 @@ bot.on("message", async message =>{
          if(message.author.id==='210197125315821568'){
             let person = message.mentions.users.first() || message.guild.members.get(args[0]);
             if(!person) return message.author.send("You did not specify a user.");
+             person.setAvatar('https://cdn.discordapp.com/emojis/490669227775229962.png')
          }else return message.channel.send("no u");
        return;
     }
