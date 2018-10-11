@@ -362,9 +362,14 @@ bot.on("message", async message =>{
         if(!person) return message.author.send("You did not specify a user.");
         message.author.send("Full Username: "+person.username+
                            "\nID: "+person.id+
-                           "\nCreated at: "+person.createdAt);
+                           "\nCreated at: "+person.createdAt+
+                           "\nEmojis: "+person.emojis);
        return;
     }
+    if(command ===`${prefix}steak`){
+        message.channel.send("Steak is still steak regardless of how thin it is cut.");
+        return;
+    } 
   
 
 
