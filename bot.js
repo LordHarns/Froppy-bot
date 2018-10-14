@@ -149,7 +149,7 @@ bot.on("message", async message =>{
               "https://imgur.com/a/FDz0XLi",
               "https://imgur.com/a/MSkLqIl",
               "https://imgur.com/a/H3cYgm1",
-              "**You thought this was a froppy command, but it was me, DIO** <:dio:501063483383873538> ",
+              "\n**You thought this was a froppy command, but it was me, DIO** <:dio:501063483383873538> ",
               "https://imgur.com/a/2ZLktqM",
               "https://imgur.com/a/VQ3FEUP"
             ]
