@@ -14,10 +14,14 @@ bot.on('guildMemberAdd', member => {
   // Do nothing if the channel wasn't found on this server
   if (!channel) return;
   // Send the message, mentioning the member
-  channel.send("Hello and welcome to the Grandline Review, your source for everything One Piece, except for here, where we talk shit and share memes.\n"+
+    setTimeout(function(){
+ channel.send("Hello and welcome to the Grandline Review, your source for everything One Piece, except for here, where we talk shit and share memes.\n"+
 
-        "We would encourage you to check <#452165353041035266> and to choose and join a crew of your preference. Once you've chosen a crew, DM or ping (if they're online) any Yonko to join that crew, and they'll give you your role and privileges at their earliest convenience.\n"
+        "Please go look at <#446962534700810240>, and <#488537146974797824> when given the chance. We would also encourage you to check <#452165353041035266> and to choose and join a crew of your preference. Once you've chosen a crew, DM or ping (if they're online) any Yonko to join that crew, and they'll give you your role and privileges at their earliest convenience.\n"
         +"Enjoy your stay! <:Froppy:451291349145354241>");
+
+}, 500); 
+ 
 });
 bot.on("message", async message =>{
     
