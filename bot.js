@@ -392,6 +392,10 @@ bot.on("message", async message =>{
         message.channel.send("<:axe:501924866279342091><:axe:501924866279342091><:axe:501924866279342091><@446739080198488074>");
         return;
     } 
+     if(command ===`${prefix}shoot`){
+        message.channel.send("<:twoshoot:501930411774050324><@446739080198488074><:oneshoot:501930396213182481>");
+        return;
+    } 
   
 
 
