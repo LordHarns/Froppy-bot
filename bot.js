@@ -396,6 +396,10 @@ bot.on("message", async message =>{
         message.channel.send("<:twoshoot:501930411774050324><@446739080198488074><:oneshoot:501930396213182481>");
         return;
     } 
+     if(command ===`${prefix}snap`){
+        message.channel.send("<:thanos:501931517828661260><@446739080198488074><:spiderman:501931567518580746>");
+        return;
+    } 
   
 
 
