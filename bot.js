@@ -384,6 +384,14 @@ bot.on("message", async message =>{
          }else return message.channel.send("no u");
        return;
     }
+    if(command ===`${prefix}stab`){
+        message.channel.send("<:stabknife:501924912139862038><:stabknife:501924912139862038><:stabknife:501924912139862038><@446739080198488074>");
+        return;
+    } 
+    if(command ===`${prefix}axe`){
+        message.channel.send("<:axe:501924866279342091><:axe:501924866279342091><:axe:501924866279342091><@446739080198488074>");
+        return;
+    } 
   
 
 
