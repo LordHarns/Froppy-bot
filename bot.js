@@ -400,7 +400,7 @@ bot.on("message", async message =>{
         message.channel.send("<:thanos:501931517828661260><@446739080198488074><:spiderman:501931567518580746>");
         return;
     } 
-    if(command ===`${prefix}'sink`){
+    if(command ===`${prefix}sink`){
         message.channel.send("<:cannon:502271436937887771> <:ball:502301176050483210> <:crabship:502271401072263169>");
         return;
     }
