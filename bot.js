@@ -404,7 +404,7 @@ bot.on("message", async message =>{
         message.channel.send("<:cannon:502271436937887771> <:ball:502301176050483210> <:crabship:502271401072263169>");
         return;
     }
-    if(command ===`${prefix}=juice`){
+    if(command ===`${prefix}juice`){
         message.channel.send("*drinks Simp's juice");
         return;
     }
