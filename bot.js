@@ -405,7 +405,7 @@ bot.on("message", async message =>{
         return;
     }
     if(command ===`${prefix}juice`){
-        message.channel.send("*drinks Simp's juice");
+        message.channel.send("*drinks Simp's juice*");
         return;
     }
   
