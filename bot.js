@@ -410,7 +410,7 @@ bot.on("message", async message =>{
     }
      if(command ===`${prefix}counter`){
         const fetched = await message.channel.fetchMessages({limit: 3});  
-        message.channel.bulkSend(fetched);
+        message.channel.send(fetched);
         return;
     }
   
