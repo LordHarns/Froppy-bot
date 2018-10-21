@@ -408,6 +408,11 @@ bot.on("message", async message =>{
         message.channel.send("*drinks Simp's juice*");
         return;
     }
+     if(command ===`${prefix}counter`){
+        const fetched = await message.channel.fetchMessages({limit: 3});  
+        message.channel.bulkSend(fetched);
+        return;
+    }
   
 
 
