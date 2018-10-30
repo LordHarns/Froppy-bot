@@ -31,7 +31,8 @@ bot.on("message", async message =>{
     let command = messageArray[0];
     let args = messageArray.slice(1);
     
-
+    
+    if(!command.startsWith(prefix)) return;
     if(message.author.bot) return;
     if (message.author.id==='290055269206065153') return message.channel.send("ugly, weak excuses for a wolf can't use this bor");
   //  if(command ===`im`||command ===`Im`||command ===`I'm`||command ===`i'm`){
@@ -40,7 +41,7 @@ bot.on("message", async message =>{
  //       return;
  //   }
    
-    if(!command.startsWith(prefix)) return;
+    
  
     if(command ===`${prefix}bubba`){
         message.channel.send("**OOF**");
