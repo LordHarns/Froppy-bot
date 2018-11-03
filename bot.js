@@ -415,6 +415,10 @@ bot.on("message", async message =>{
         message.channel.send(channel.fetchMessages({limit: 1}));
         return;
     }
+    if(command ===`${prefix}hoff`){
+        message.channel.send("**Ni**");
+        return;
+    }
   
 
 
