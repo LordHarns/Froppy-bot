@@ -419,6 +419,10 @@ bot.on("message", async message =>{
         message.channel.send("**Ni**");
         return;
     }
+     if(command ===`${prefix}hulk`){
+        message.channel.send("**FROPPY SMASH**");
+        return;
+    }
   
 
 
