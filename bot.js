@@ -423,6 +423,10 @@ bot.on("message", async message =>{
         message.channel.send("**FROPPY SMASH**");
         return;
     }
+    if(command ===`${prefix}hulk`){
+        message.channel.send("<:iur2:510298311308214272><:twoshoot:501930411774050324><:iu2:510298668260261890>");
+        return;
+    }
   
 
 
