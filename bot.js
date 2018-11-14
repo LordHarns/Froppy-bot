@@ -428,7 +428,7 @@ bot.on("message", async message =>{
         return;
     }
     if(command ===`${prefix}creepyuncle`){
-        message.channel.send("<@237622107138293760>. I choose you!");
+        message.channel.send("<@237622107138293760>. I love shorts. They are comfy and easy to wear!");
         return;
     }
     
