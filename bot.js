@@ -428,7 +428,7 @@ bot.on("message", async message =>{
         return;
     }
     if(command ===`${prefix}creepyuncle`){
-        message.channel.send("<@237622107138293760>. you have been summoned.");
+        message.channel.send("<@237622107138293760>. I choose you!");
         return;
     }
     
