@@ -431,6 +431,11 @@ bot.on("message", async message =>{
         message.channel.send("<@237622107138293760>. I like shorts. They are comfy and easy to wear!");
         return;
     }
+     if(command ===`${prefix}kebab`){
+        message.channel.send("This is a kebab:");
+        message.channel.send("https://imgur.com/a/73bSvLR");
+        return;
+    }
     
 
 
