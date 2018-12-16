@@ -436,6 +436,10 @@ bot.on("message", async message =>{
         message.channel.send("https://imgur.com/a/73bSvLR");
         return;
     }
+    if(command ===`${prefix}calmbelt`){
+        message.channel.send("https://imgur.com/a/7DVbErx");
+        return;
+    }
     
 
 
