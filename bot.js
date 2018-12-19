@@ -440,6 +440,10 @@ bot.on("message", async message =>{
         message.channel.send("https://imgur.com/a/7DVbErx");
         return;
     }
+    if(command ===`${prefix}bestchristmasmovie`){
+        message.channel.send("The best Christmas movie is Polar Express, anyone who disagrees is objectively wrong.");
+        return;
+    }
     
 
 
