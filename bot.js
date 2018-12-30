@@ -444,6 +444,43 @@ bot.on("message", async message =>{
         message.channel.send("The best Christmas movie is Polar Express, anyone who disagrees is objectively wrong.");
         return;
     }
+     if(command ===`${prefix}puck`){
+  
+     const imagelist = {
+            "pillow": [
+                "https://imgur.com/a/czzew71",
+                "https://imgur.com/a/n6ggcQ0",
+                "https://imgur.com/a/H4UeIqn",
+                "https://imgur.com/a/y2R9YK6",
+                "https://imgur.com/a/1UX3N2B",
+                "https://imgur.com/a/xS4tlwW",
+                "https://imgur.com/a/71YnHxY",
+                "https://imgur.com/a/9Nk0jVW",
+                "https://imgur.com/a/zoDLcTx",
+                "https://imgur.com/a/CGIo5rO",
+                "https://imgur.com/a/GYrNTIJ",
+                "https://imgur.com/a/XwmXW0M",
+                "https://imgur.com/a/aRUJxlb",
+                "https://imgur.com/a/rJejxlS",
+                "https://imgur.com/a/1jJqD8j",
+                "https://imgur.com/a/wtF5I9M",
+                "https://imgur.com/a/nGJYTEz",
+                "https://imgur.com/a/JFgcKjX",
+                "https://imgur.com/a/uFrGZKF",
+                "https://imgur.com/a/UsFwqm7",
+                "https://imgur.com/a/oHEwrIU",
+                "https://imgur.com/a/wtF5I9M",
+                "https://imgur.com/a/mgjR9k6",
+                "https://imgur.com/a/2BEeacw"
+                
+                
+            ]
+        };
+        var image=imagelist["pillow"];
+        var randomImageLink =image[Math.floor(Math.random()*image.length)];
+        message.channel.send("Its Puck!"+ randomImageLink);
+         return;
+     }
     
 
 
