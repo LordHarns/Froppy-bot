@@ -482,6 +482,10 @@ bot.on("message", async message =>{
          return;
      }
     
+      if(command ===`${prefix}partybelt`){
+        message.channel.send("https://imgur.com/a/i3l4HnX");
+        return;
+    }
 
 
 });
