@@ -486,6 +486,10 @@ bot.on("message", async message =>{
         message.channel.send("https://imgur.com/a/i3l4HnX");
         return;
     }
+    if(command ===`${prefix}arewethereyet`){
+        message.channel.send("<@!267457734516015105>, when will we start?");
+        return;
+    }
 
 
 });
