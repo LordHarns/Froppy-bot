@@ -492,7 +492,7 @@ bot.on("message", async message =>{
     }
     
    if(command ===`${prefix}sleep`){
-        message.channel.send("That is entirely unnecessary and dangerious. Don't sleep kids ");
+        message.channel.send("That is entirely unnecessary and dangerous. Don't sleep kids ");
         return;
     }
 
