@@ -490,6 +490,11 @@ bot.on("message", async message =>{
         message.channel.send("<@!267457734516015105>, when will we start?");
         return;
     }
+    
+   if(command ===`${prefix}sleep`){
+        message.channel.send("That is entirely unnecessary and dangerious. Don't sleep kids ");
+        return;
+    }
 
 
 });
