@@ -15,14 +15,14 @@ bot.on('voiceStateUpdate', (oldMember, newMember) => {
 
   if(oldUserChannel === undefined && newUserChannel !== undefined) {
 
-    message.newMember.user.addRole('565306772961755147')
+    message.newMember.addRole('565306772961755147')
       .then(console.log)
       .catch(console.error);
 
   } else if(newUserChannel === undefined){
 
     // User leaves a voice channel
-    message.newMember.user.removeRole('565306772961755147')
+    message.newMember.removeRole('565306772961755147')
   .then(console.log)
   .catch(console.error);
   }
