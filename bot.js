@@ -8,6 +8,25 @@ const prefix= 'f!';
 //bot.on("ready", ()=> {
   //  console.log('I am ready!');
 //});
+bot.on('voiceStateUpdate', (oldMember, newMember) => {
+  let newUserChannel = newMember.voiceChannel
+  let oldUserChannel = oldMember.voiceChannel
+
+
+  if(oldUserChannel === undefined && newUserChannel !== undefined) {
+
+    message.newMember.user.addRole('565306772961755147')
+      .then(console.log)
+      .catch(console.error);
+
+  } else if(newUserChannel === undefined){
+
+    // User leaves a voice channel
+    message.newMember.user.removeRole('565306772961755147')
+  .then(console.log)
+  .catch(console.error);
+  }
+})
 bot.on('guildMemberAdd', member => {
   // Send the message to a designated channel on a server:
   var channel = member.guild.channels.find(ch => ch.name === 'grand-line');
