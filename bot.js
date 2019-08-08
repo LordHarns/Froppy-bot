@@ -27,6 +27,9 @@ bot.on('voiceStateUpdate', (oldMember, newMember) => {
   .catch(console.error);
   }
 })
+//bot.on('voiceStateUpdate', (oldMember, newMember) => {
+// 
+//})
 bot.on('guildMemberAdd', member => {
   // Send the message to a designated channel on a server:
   var channel = member.guild.channels.find(ch => ch.name === 'grand-line');
@@ -512,6 +515,12 @@ bot.on("message", async message =>{
     
    if(command ===`${prefix}sleep`){
         message.channel.send("That is entirely unnecessary and dangerous. Don't sleep kids ");
+        return;
+    }
+     if(command ===`${prefix}move`){
+        channel.setPosition(2)
+  .then(newChannel => console.log(`Channel's new position is ${newChannel.position}`))
+  .catch(console.error);
         return;
     }
 
