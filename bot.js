@@ -518,7 +518,7 @@ bot.on("message", async message =>{
         return;
     }
      if(command ===`${prefix}move`){
-        channel.setPosition(2)
+        channel.setPosition(1)
   .then(newChannel => console.log(`Channel's new position is ${newChannel.position}`))
   .catch(console.error);
         return;
