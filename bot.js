@@ -395,69 +395,7 @@ bot.on("message", async message =>{
                            "\nEmojis: "+person.emojis);
        return;
     }
-    if(command ===`${prefix}punch`){
-        message.channel.send("<:ff:500057586863702026><:dd:499071719714062357><:cc:499071699099189258><:ee:499071742556504075><:bb:499071663418245140><:aa:499071615892586496><@446739080198488074>");
-        return;
-    } 
-     if(command ===`${prefix}poof`){
-         if(message.author.id==='210197125315821568'){
-            let person = message.mentions.users.first() || message.guild.members.get(args[0]);
-            if(!person) return message.author.send("You did not specify a user.");
-             //person.setAvatar('https://cdn.discordapp.com/emojis/490669227775229962.png');
-             person.setNickname("RandomName");
-         }else return message.channel.send("no u");
-       return;
-    }
-    if(command ===`${prefix}stab`){
-        message.channel.send("<:stabknife:501924912139862038><:stabknife:501924912139862038><:stabknife:501924912139862038><@446739080198488074>");
-        return;
-    } 
-    if(command ===`${prefix}axe`){
-        message.channel.send("<:axe:501924866279342091><:axe:501924866279342091><:axe:501924866279342091><@446739080198488074>");
-        return;
-    } 
-     if(command ===`${prefix}shoot`){
-        message.channel.send("<:twoshoot:501930411774050324><@446739080198488074><:oneshoot:501930396213182481>");
-        return;
-    } 
-     if(command ===`${prefix}snap`){
-        message.channel.send("<:thanos:501931517828661260><@446739080198488074><:spiderman:501931567518580746>");
-        return;
-    } 
-    if(command ===`${prefix}sink`){
-        message.channel.send("<:cannon:502271436937887771> <:ball:502301176050483210> <:crabship:502271401072263169>");
-        return;
-    }
-    if(command ===`${prefix}juice`){
-        message.channel.send("*drinks Simp's juice*");
-        return;
-    }
-     if(command ===`${prefix}counter`){
-      channel.fetchMessages({limit: 1})  
-        message.channel.send(channel.fetchMessages({limit: 1}));
-        return;
-    }
-    if(command ===`${prefix}hoff`){
-        message.channel.send("**Ni**");
-        return;
-    }
-     if(command ===`${prefix}hulk`){
-        message.channel.send("**FROPPY SMASH**");
-        return;
-    }
-    if(command ===`${prefix}bait`){
-        message.channel.send("<:iur2:510298311308214272><:twoshoot:501930411774050324><:iu2:510298668260261890>");
-        return;
-    }
-    if(command ===`${prefix}creepyuncle`){
-        message.channel.send("<@237622107138293760>. I like shorts. They are comfy and easy to wear!");
-        return;
-    }
-     if(command ===`${prefix}kebab`){
-        message.channel.send("This is a kebab:");
-        message.channel.send("https://imgur.com/a/73bSvLR");
-        return;
-    }
+
     if(command ===`${prefix}calmbelt`){
         message.channel.send("https://imgur.com/a/7DVbErx");
         return;
@@ -508,21 +446,7 @@ bot.on("message", async message =>{
         message.channel.send("https://imgur.com/a/i3l4HnX");
         return;
     }
-    if(command ===`${prefix}arewethereyet`){
-        message.channel.send("<@!267457734516015105>, when will we start?");
-        return;
-    }
-    
-   if(command ===`${prefix}sleep`){
-        message.channel.send("That is entirely unnecessary and dangerous. Don't sleep kids ");
-        return;
-    }
-     if(command ===`${prefix}move`){
-        channel.setPosition(1)
-  .then(newChannel => console.log(`Channel's new position is ${newChannel.position}`))
-  .catch(console.error);
-        return;
-    }
+
 
 
 });
