@@ -12,7 +12,7 @@ bot.on('voiceStateUpdate', (oldMember, newMember) => {
   let newUserChannel = newMember.voiceChannel
   let oldUserChannel = oldMember.voiceChannel
 
-
+ 
   if(oldUserChannel === undefined && newUserChannel !== undefined) {
 
     message.newMember.addRole('565306772961755147')
