@@ -446,7 +446,10 @@ bot.on("message", async message =>{
         message.channel.send("https://imgur.com/a/i3l4HnX");
         return;
     }
-
+  if(command ===`${prefix}breakfast`){
+        message.channel.send("Waffle Waffle Waffle!");
+        return;
+    }
 
 
 });
