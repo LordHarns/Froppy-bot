@@ -190,7 +190,10 @@ bot.on("message", async message =>{
     if(command ===`${prefix}disable`){
          if(message.author.id==='210197125315821568')
         {
-        process.exit()
+         message.channel.send("hello");
+        //process.exit()
+        }else{
+            message.channel.send("yes");
         }
         return;
     }
