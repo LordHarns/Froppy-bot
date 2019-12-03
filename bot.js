@@ -187,7 +187,7 @@ bot.on("message", async message =>{
         
       return;
     }
-    if(command ===`${prefix}disable`){
+    if(command ===`${prefix}bananacheese`){
         process.exit()
         return;
     }
