@@ -187,8 +187,11 @@ bot.on("message", async message =>{
         
       return;
     }
-    if(command ===`${prefix}bananacheese`){
+    if(command ===`${prefix}disable`){
+         if(message.author.id==='210197125315821568')
+        {
         process.exit()
+        }
         return;
     }
     if(command ===`${prefix}help`){
