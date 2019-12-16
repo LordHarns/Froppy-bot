@@ -35,7 +35,7 @@ bot.on('guildMemberAdd', member => {
   var channel = member.guild.channels.find(ch => ch.name === 'grand-line');
   // Do nothing if the channel wasn't found on this server
   if (!channel) return;
-  // Send the message, mentioning the memberss
+  // Send the message, mentioning the member
     setTimeout(function(){
  channel.send("Hello and welcome to the Grandline Review, your source for everything One Piece, except for here, where we talk shit and share memes.\n"+
 
@@ -53,16 +53,7 @@ bot.on("message", async message =>{
     let command = messageArray[0];
     let args = messageArray.slice(1);
     
-    if(message.includes(`bagel`)){
-         //if(message.author.id==='446739080198488074'
-       // {
-        message.delete(1000);
-        
-       // }else{
-          
-       // }
-        return;
-    }
+    
     if(!command.startsWith(prefix)) return;
     if(message.author.bot) return;
     if (message.author.id==='290055269206065153') return message.channel.send("ugly, weak excuses for a wolf can't use this bor");
@@ -465,8 +456,16 @@ bot.on("message", async message =>{
         message.channel.send("Waffle Waffle Waffle!");
         return;
     }
-    
-    
+    if(command ===`bagel`){
+         if(message.author.id==='446739080198488074')
+        {
+        message.delete(1000);
+        
+        }else{
+          
+        }
+        return;
+    }
 
 
 });
