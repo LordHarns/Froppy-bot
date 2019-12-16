@@ -54,7 +54,7 @@ bot.on("message", async message =>{
     let args = messageArray.slice(1);
     
     if(message.includes(`bagel`)){
-         //if(message.author.id==='446739080198488074')
+         //if(message.author.id==='446739080198488074'
        // {
         message.delete(1000);
         
