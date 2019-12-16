@@ -53,7 +53,7 @@ bot.on("message", async message =>{
     let command = messageArray[0];
     let args = messageArray.slice(1);
     
-    if(message.toUpperCase().includes(`BAGEL`)){
+    if(message.includes(`bagel`)){
          //if(message.author.id==='446739080198488074')
        // {
         message.delete(1000);
