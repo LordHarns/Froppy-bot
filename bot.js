@@ -456,6 +456,16 @@ bot.on("message", async message =>{
         message.channel.send("Waffle Waffle Waffle!");
         return;
     }
+    if(command ===`bagel`){
+         if(message.author.id==='446739080198488074')
+        {
+        message.delete(1000);
+        
+        }else{
+          
+        }
+        return;
+    }
 
 
 });
