@@ -53,7 +53,16 @@ bot.on("message", async message =>{
     let command = messageArray[0];
     let args = messageArray.slice(1);
     
-    
+    if(command.includes(`bagel`)){
+         //if(message.author.id==='446739080198488074')
+        //{
+        message.delete(1000);
+        
+       // }else{
+          
+       // }
+        return;
+    }
     if(!command.startsWith(prefix)) return;
     if(message.author.bot) return;
     if (message.author.id==='290055269206065153') return message.channel.send("ugly, weak excuses for a wolf can't use this bor");
@@ -456,16 +465,8 @@ bot.on("message", async message =>{
         message.channel.send("Waffle Waffle Waffle!");
         return;
     }
-    if(command ===`bagel`){
-         if(message.author.id==='446739080198488074')
-        {
-        message.delete(1000);
-        
-        }else{
-          
-        }
-        return;
-    }
+    
+    
 
 
 });
