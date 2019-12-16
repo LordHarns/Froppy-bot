@@ -35,7 +35,7 @@ bot.on('guildMemberAdd', member => {
   var channel = member.guild.channels.find(ch => ch.name === 'grand-line');
   // Do nothing if the channel wasn't found on this server
   if (!channel) return;
-  // Send the message, mentioning the member
+  // Send the message, mentioning the members
     setTimeout(function(){
  channel.send("Hello and welcome to the Grandline Review, your source for everything One Piece, except for here, where we talk shit and share memes.\n"+
 
