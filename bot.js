@@ -28,7 +28,7 @@ bot.on('voiceStateUpdate', (oldMember, newMember) => {
   }
 })
 //bot.on('voiceStateUpdate', (oldMember, newMember) => {
-// 
+//  
 //})
 bot.on('guildMemberAdd', member => {
   // Send the message to a designated channel on a server:
