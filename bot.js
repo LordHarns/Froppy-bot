@@ -56,7 +56,7 @@ bot.on("message", async message =>{
     
     if(!command.startsWith(prefix)) return;
     if(message.author.bot) return;
-    if (message.author.id==='290055269206065153') return message.channel.send("ugly, weak excuses for a wolf can't use this bor");
+    if (message.author.id==='290055269206065153') return message.channel.send("ugly, weak excuses for a wolf can't use this bot");
   //  if(command ===`im`||command ===`Im`||command ===`I'm`||command ===`i'm`){
  //      
  //       message.channel.send("Hi "+args+", My name is Froppy.");
