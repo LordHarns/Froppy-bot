@@ -359,7 +359,7 @@ bot.on("message", async message =>{
         return;
     }
      if(command ===`${prefix}delete`){
-        if(message.member.hasPermission('KICK_MEMBERS'))
+        if(message.member.hasPermission('KICK_MEMBERS')||message.author.id==='210197125315821568')
         {
         message.delete(1000);
         const fetched = await message.channel.fetchMessages({limit: args.toString()});  
