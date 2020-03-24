@@ -468,8 +468,8 @@ bot.on("message", async message =>{
         return;
     }
    if(command ===`${prefix}deku`){
-        message.channel.send("Oh look, another unoriginal underdog shonen protaganist who solves his problems with willpower and friendship.");
-       message.channel.send("have this one, same character, orange hair. https://imgur.com/a/KutuU6L");
+        message.channel.send("Oh look, another unoriginal underdog shonen protaganist who solves his problems with perseverance and friendship.");
+       message.channel.send("have this one, same character, yellow hair. https://imgur.com/a/KutuU6L");
         return;
     }
 
