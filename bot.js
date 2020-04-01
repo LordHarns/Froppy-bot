@@ -53,6 +53,10 @@ bot.on("message", async message =>{
     let command = messageArray[0];
     let args = messageArray.slice(1);
     
+   if(message.author.id==='133025415160659968'){
+       message.delete(1000);
+        return;
+    }
     
     if(!command.startsWith(prefix)) return;
     if(message.author.bot) return;
@@ -472,10 +476,7 @@ bot.on("message", async message =>{
        message.channel.send("have this one, same character, yellow hair. https://imgur.com/a/KutuU6L");
         return;
     }
-    if(message.author.id==='133025415160659968'){
-       message.delete(1000);
-        return;
-    }
+    
         
 
 
