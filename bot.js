@@ -480,6 +480,10 @@ bot.on("message", async message =>{
         message.channel.send("It seems that people have confused Oda copy and pasting a female body and adding fur with an actual character. What ever this \"character\" is, *it* does not deserve a command.");
         return;
     }
+    if(command ===`${prefix}sanji`){
+        message.channel.send("see: f!mineta");
+        return;
+    }
     
         
 
