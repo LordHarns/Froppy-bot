@@ -20,7 +20,7 @@ bot.on('voiceStateUpdate', (oldMember, newMember) => {
       .catch(console.error);
 
   } else if(newUserChannel === undefined){
-
+ 
     // User leaves a voice channel
     message.newMember.removeRole('565306772961755147')
   .then(console.log)
