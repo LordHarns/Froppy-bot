@@ -476,6 +476,10 @@ bot.on("message", async message =>{
        message.channel.send("have this one, same character, yellow hair. https://imgur.com/a/KutuU6L");
         return;
     }
+    if(command ===`${prefix}carrot`){
+        message.channel.send("It seems that people have confused Oda copy and pasting a female body and adding fur with an actual character. What ever this ""character"" is, *it* does not deserve a command.");
+        return;
+    }
     
         
 
