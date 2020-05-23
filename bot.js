@@ -481,7 +481,7 @@ bot.on("message", async message =>{
         return;
     }
     if(command ===`${prefix}sanji`){
-        message.channel.send("see: f!mineta");
+        message.channel.send("He is like f!mineta, but not cute enough to sell plushy toys.");
         return;
     }
     
