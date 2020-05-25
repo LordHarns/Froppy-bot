@@ -69,10 +69,7 @@ bot.on("message", async message =>{
    
     
  
-    if(command ===`${prefix}bubba`){
-        message.channel.send("**OOF**");
-        return;
-    }
+
    
     if(command ===`${prefix}froppy`){
         const imagelist = {
@@ -203,13 +200,15 @@ bot.on("message", async message =>{
     }
     if(command ===`${prefix}help`){
          message.author.send("f!froppy: Sends a picture of froppy\n"
-                             +"f!bubba: Sends a big bold oof in chat\n"
-                             +"f!disable: Disables Froppy bot incase of an emergency\n"
+                           
                              +"f!pillow: Posts a pillow gif\n"
                              +"f!coffee: posts a coffee gif\n"
                              +"f!carue: posts a picture of how Carue will look in the future\n"
-                             +"f!simp: shows simp and his boulder\n"
-                             +"f!mustache: I have no idea why this exists\n"
+                             +"f!puck: posts a picture of the best dog ever\n"
+                             +"f!simp: shows simp and his best quote\n"
+                             +"f!mineta: a command fitting for mineta\n"
+                             +"f!deku: a command fitting for Deku\n"
+                             +"f!carrot: a command fitting for Carrot\n"
                              +"f!leam: posts a picture of LEAM\n"
                              +"f!skulljoke: posts a picture that you can see with your eyes, but I don't have any eyes! yohohoho\n"
                              +"f!lewd: a command to use if there is lewd stuff going on....\n"
@@ -324,10 +323,7 @@ bot.on("message", async message =>{
         message.channel.send("https://imgur.com/a/ifj2jgu");
         return;
     }
-    if(command ===`${prefix}mustache`){
-        message.channel.send("<:stache:490669227775229962>");
-        return;
-    }
+
     if(command ===`${prefix}leam`){
         message.channel.send("https://imgur.com/a/DG18rZm");
         return;
@@ -342,10 +338,10 @@ bot.on("message", async message =>{
         message.channel.send("https://i.imgur.com/qknrvCO.gif");
         return;
     }
-    if(command ===`${prefix}ruby`){
-        message.channel.send('Once upon a time in a land far, far away, there was a boy named Ruby. He was known as "ruby the failure" as everything he did failed. This is his story. Ruby has always faught power, he was a rebel from the day he joined the server. This failed, as he joined a crew two weeks later. He then tried again, this also failed within days of its creation. Ruby tried one last time to start a revolution, however, this time he was smart about it. He began by demanding something of our lord, his demand was so absurd, that no man would ever imagine doing it. Ruby called it "disrespecting the democratic process" when our lord refused, and the revolution had began. People from all over the land joined his cause, all in the name of democracy. However, people soon learned of his trickery, and abandoned Ruby, calling him "Ruby the Failure" and "Ruby the Lier". This final failed revolution, will forever be known as "the Zeam Rebellion." And Ruby will forever be known as the Failure.  ');
-        return;
-    }
+    //if(command ===`${prefix}ruby`){
+    //    message.channel.send('Once upon a time in a land far, far away, there was a boy named Ruby. He was known as "ruby the failure" as everything he did failed. This is his story. Ruby has always faught power, he was a rebel from the day he joined the server. This failed, as he joined a crew two weeks later. He then tried again, this also failed within days of its creation. Ruby tried one last time to start a revolution, however, this time he was smart about it. He began by demanding something of our lord, his demand was so absurd, that no man would ever imagine doing it. Ruby called it "disrespecting the democratic process" when our lord refused, and the revolution had began. People from all over the land joined his cause, all in the name of democracy. However, people soon learned of his trickery, and abandoned Ruby, calling him "Ruby the Failure" and "Ruby the Lier". This final failed revolution, will forever be known as "the Zeam Rebellion." And Ruby will forever be known as the Failure.  ');
+     //   return;
+    //}
     if(command ===`${prefix}dad`){
         message.channel.send("<@446739080198488074>. Your child needs you.");
         return;
@@ -354,12 +350,9 @@ bot.on("message", async message =>{
         message.channel.send("https://imgur.com/a/5xqZFzw");
         return;
     }
-    if(command ===`${prefix}mom`){
-        //message.channel.send("<@272110457068847106>. Your child needs you.");
-        message.channel.send("https://imgur.com/a/SC8dbuB");
-    }
+
      if(command ===`${prefix}emperor`){
-        message.channel.send("Come back, we miss you.<:sanjisad:484922406880935943>");
+        message.channel.send("Come back, we miss you.<:SanjiSad:549407041320517645>");
         return;
     }
      if(command ===`${prefix}delete`){
@@ -379,10 +372,10 @@ bot.on("message", async message =>{
         message.channel.send("https://imgur.com/a/S3rrcZP");
         return;
     }
-     if(command ===`${prefix}cage`){
-        message.channel.send("https://imgur.com/a/BA125vw");
-        return;
-    }
+    // if(command ===`${prefix}cage`){
+    //    message.channel.send("https://imgur.com/a/BA125vw");
+    //    return;
+    //}
      if(command ===`${prefix}mineta`){
         message.channel.send("A short, weak, and useless character whos only personality trait that stops him from being entirely forgotten is the fact that he is a pervert, and only exist to sell plushy toys does not deserve a command.");
         return;
@@ -391,10 +384,7 @@ bot.on("message", async message =>{
         message.channel.send("You can't kill what is already dead inside!");
         return;
     }
-     if(command ===`${prefix}steak`){
-        message.channel.send("Steak is still steak regardless of how thin it is cut.");
-        return;
-    } 
+
     if(command ===`${prefix}user`){
        let person = message.mentions.users.first() || message.guild.members.get(args[0]);
         message.delete(1000);
@@ -406,14 +396,11 @@ bot.on("message", async message =>{
        return;
     }
 
-    if(command ===`${prefix}calmbelt`){
-        message.channel.send("https://imgur.com/a/7DVbErx");
-        return;
-    }
-    if(command ===`${prefix}bestchristmasmovie`){
-        message.channel.send("The best Christmas movie is Polar Express, anyone who disagrees is objectively wrong.");
-        return;
-    }
+    //if(command ===`${prefix}calmbelt`){
+    //    message.channel.send("https://imgur.com/a/7DVbErx");
+    //    return;
+    //}
+    
      if(command ===`${prefix}puck`){
   
      const imagelist = {
@@ -452,25 +439,21 @@ bot.on("message", async message =>{
          return;
      }
     
-      if(command ===`${prefix}partybelt`){
-        message.channel.send("https://imgur.com/a/i3l4HnX");
-        return;
-    }
-  if(command ===`${prefix}breakfast`){
-        message.channel.send("Waffle Waffle Waffle!");
-        return;
-    }
-    if(command ===`bagel`){
-         if(message.author.id==='446739080198488074')
-        {
-        message.delete(1000);
-        
-        }else{
-          
-        }
-     
-        return;
-    }
+    //  if(command ===`${prefix}partybelt`){
+    //    message.channel.send("https://imgur.com/a/i3l4HnX");
+    //    return;
+    //}
+
+    //if(command ===`bagel`){
+     //    if(message.author.id==='446739080198488074')
+      //  {
+     //   message.delete(1000);
+      //  
+     //   }else{
+       //   
+      //  }
+      //  return;
+  //  }
    if(command ===`${prefix}deku`){
         message.channel.send("Oh look, another unoriginal underdog shonen protaganist who solves his problems with perseverance and friendship.");
        message.channel.send("have this one, same character, yellow hair. https://imgur.com/a/KutuU6L");
