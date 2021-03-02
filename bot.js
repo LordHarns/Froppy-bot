@@ -482,7 +482,7 @@ bot.on("message", async message =>{
         {
             message.channel.send("<@210197125315821568>, you have recieved a **surprise** please use the command f!surprise to see it!");
             var channel = member.guild.channels.find(ch => ch.name === 'stuff');
-            message.channel.send("<@210197125315821568>, you have recieved a **surprise** please use the command f!surprise to see it!");
+            channel.send("<@210197125315821568>, you have recieved a **surprise** please use the command f!surprise to see it!");
         }else{
             return;
         }
