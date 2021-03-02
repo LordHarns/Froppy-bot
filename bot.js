@@ -480,8 +480,9 @@ bot.on("message", async message =>{
     if(command ===`${prefix}sftell`){
         if(message.author.id==='210197125315821568')
         {
+            message.channel.send("<@210197125315821568>, you have recieved a **surprise** please use the command f!surprise to see it!");
             var channel = member.guild.channels.find(ch => ch.name === 'stuff');
-            channel.send("<@210197125315821568>, you have recieved a **surprise** please use the command f!surprise to see it!");
+            message.channel.send("<@210197125315821568>, you have recieved a **surprise** please use the command f!surprise to see it!");
         }else{
             return;
         }
