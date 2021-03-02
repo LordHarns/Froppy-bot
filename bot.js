@@ -467,6 +467,15 @@ bot.on("message", async message =>{
         message.channel.send("He is like f!mineta, but not cute enough to sell plushy toys.");
         return;
     }
+    if(command ===`${prefix}surprise`){
+        if(message.author.id==='210197125315821568')
+        {
+            message.author.send("Here is your surprise");
+        }else{
+            message.channel.send("Im sorry, but you have not recieved a **surprise**");
+        }
+        return;
+    }
     
         
 
