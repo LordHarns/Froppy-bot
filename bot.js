@@ -468,7 +468,7 @@ bot.on("message", async message =>{
         return;
     }
     if(command ===`${prefix}surprise`){
-        if(message.author.id==='210197125315821568')
+        if(message.author.id==='210197125315821568'||message.author.id==='446739080198488074')
         {
             message.author.send("Surprise");
             message.author.send("||https://imgur.com/a/OvuI0nH We hope you and Max continue to stay healthy and happy - your friends||");
