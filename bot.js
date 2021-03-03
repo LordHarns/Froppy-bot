@@ -471,6 +471,7 @@ bot.on("message", async message =>{
         if(message.author.id==='210197125315821568')
         {
             message.author.send("Surprise");
+            message.author.send("||https://imgur.com/a/OvuI0nH We hope you and Max continue to stay healthy and happy - your friends||");
         }else{
             message.channel.send("Im sorry, but you have not recieved a **surprise**");
         }
