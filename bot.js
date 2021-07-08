@@ -468,10 +468,10 @@ bot.on("message", async message =>{
         return;
     }
     if(command ===`${prefix}surprise`){
-        if(message.author.id==='210197125315821568'||message.author.id==='446739080198488074')
+        if(message.author.id==='210197125315821568'||message.author.id==='304007966196105218')
         {
-            message.author.send("Surprise");
-            message.author.send("||https://imgur.com/a/OvuI0nH We hope you and Max continue to stay healthy and happy - your friends||");
+            message.author.send("Ribbit Surprise!");
+            message.author.send("||I hope you have a wonderful day! Ribbit!||");
         }else{
             message.channel.send("Im sorry, but you have not recieved a **surprise**");
         }
@@ -482,7 +482,7 @@ bot.on("message", async message =>{
         if(message.author.id==='210197125315821568')
         {
             message.delete(1000);
-            message.channel.send("<@446739080198488074>, you have recieved a **surprise** please use the command f!surprise to see it!");
+            message.channel.send("<@304007966196105218>, you have recieved a **surprise** please use the command f!surprise to see it!");
        
         }else{
             return;
